@@ -1,0 +1,52 @@
+# The EN and ZH version can be served at the same time.
+
+[projects]
+
+  # Default project, used when calling serve() or pdf().
+  [projects.en]
+  homepage_contents = "index_en"
+
+  metadata_path = "metadata_en.yml"
+
+  contents = [
+    "main_en"
+  ]
+
+  # Output pdf or docx filename.
+  output_filename = "Learn_Julia_The_Fun_Way(EN)"
+
+  # Port used by serve().
+  port = 8011
+
+  # Prefix for GitHub Pages links.
+  online_url_prefix = "en"
+
+  # Extra directories to copy into build each iteration of serve and when building site.
+  extra_directories = [
+    "resources"
+  ]
+
+
+  [projects.zh]
+  homepage_contents = "index_zh"
+
+  metadata_path = "metadata_zh.yml"
+
+  contents = [
+    "prepare_environment_zh",
+    "REPL_zh"
+  ]
+
+  # Output pdf or docx filename.
+  output_filename = "Learn_Julia_The_Fun_Way(ZH)"
+
+  # Port used by serve(project="zh").
+  port = 8012
+
+  # Prefix for GitHub Pages links.
+  online_url_prefix = "zh"
+
+  # Extra directories to copy into build each iteration of serve and when building site.
+  extra_directories = [
+    "resources"
+  ]

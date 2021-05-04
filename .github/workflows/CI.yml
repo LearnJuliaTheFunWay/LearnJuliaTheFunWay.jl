@@ -1,0 +1,53 @@
+name: CI
+
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  test-and-deploy:
+    name: Test and deploy
+    runs-on: ubuntu-20.04
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          persist-credentials: false
+
+      - uses: julia-actions/setup-julia@v1
+        with:
+          version: '1.6'
+
+      - uses: actions/cache@v1
+        env:
+          cache-name: cache-artifacts
+        with:
+          path: ~/.julia/artifacts
+          key: ${{ runner.os }}-test-${{ env.cache-name }}-${{ hashFiles('**/Project.toml') }}
+          restore-keys: |
+            ${{ runner.os }}-test-${{ env.cache-name }}-
+            ${{ runner.os }}-test-
+            ${{ runner.os }}-
+
+      - uses: julia-actions/julia-runtest@v1
+
+      - name: Install dependencies
+        run: julia --project -e 'using Pkg; Pkg.instantiate();
+                using Books; Books.install_dependencies()'
+
+      - name: Build books
+        run: |
+          cd book
+          julia --project -e 'using Pkg; Pkg.instantiate();'
+          julia --project build.jl
+
+      - name: Deploy to the main repo
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
+          external_repository: LearnJuliaTheFunWay/LearnJuliaTheFunWay.github.io
+          force_orphan: true
+          publish_branch: master
+          publish_dir: ./book/homepage/
