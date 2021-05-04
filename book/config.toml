@@ -19,7 +19,7 @@
   port = 8011
 
   # Prefix for GitHub Pages links.
-  online_url_prefix = "en"
+  online_url_prefix = "/en"
 
   # Extra directories to copy into build each iteration of serve and when building site.
   extra_directories = [
@@ -44,7 +44,7 @@
   port = 8012
 
   # Prefix for GitHub Pages links.
-  online_url_prefix = "zh"
+  online_url_prefix = "/zh"
 
   # Extra directories to copy into build each iteration of serve and when building site.
   extra_directories = [
