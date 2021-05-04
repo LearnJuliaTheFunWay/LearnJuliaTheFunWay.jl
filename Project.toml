@@ -1,0 +1,4 @@
+name = "LearnJuliaTheFunWay"
+uuid = "3c731e86-efac-404e-a11e-64be989f1dca"
+authors = ["Jun Tian <tianjun.cpp@gmail.com>"]
+version = "0.1.0"
