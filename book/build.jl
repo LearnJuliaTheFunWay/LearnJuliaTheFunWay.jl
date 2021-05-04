@@ -14,13 +14,13 @@ function build()
     Books.is_ci() && install_fonts()
 
     @info "building Chinese version..."
-    mkpath("build")
+    mkpath("_build")
     Books.gen(; M=LearnJuliaTheFunWay.CodeSnippets, project="zh", fail_on_error=true)
     Books.build_all(; project="zh")
     mv("_build", "homepage/zh"; force=true)
 
     @info "building English version..."
-    mkpath("build")
+    mkpath("_build")
     Books.gen(; M=LearnJuliaTheFunWay.CodeSnippets, project="en", fail_on_error=true)
     Books.build_all(; project="en")
     mv("_build", "homepage/en"; force=true)
