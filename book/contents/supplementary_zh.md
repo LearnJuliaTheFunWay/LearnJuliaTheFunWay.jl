@@ -1,4 +1,6 @@
-# 准备 Julia 运行环境
+# 补充材料 {#sec:supplementary}
+
+## 配置 Julia 开发环境 {#sec:setup_julia_environment}
 
 ```{.include}
 _gen/current_julia_version_zh.md
@@ -6,7 +8,7 @@ _gen/current_julia_version_zh.md
 
 这一章主要介绍如何配置基本的 Julia 开发环境，以及一些常见的开发工具。
 
-## 本地安装
+### 本地安装
 
 官方推荐的安装方式是，前往[下载](https://julialang.org/downloads/#current_stable_release)页面，根据你当前的操作系统，下载对应的预编译好的文件，解压后将其中的 `bin` 子目录添加到**环境变量**中，然后重启命令行，执行 `julia` 即可进入 [`REPL`](@sec:REPL) 。
 
@@ -24,10 +26,14 @@ _gen/current_julia_version_zh.md
 - [jill.py](https://github.com/johnnychen94/jill.py)
 - [jvc](https://github.com/songxianxu/jvc)
 
-## Jupyter Notebook
+### Jupyter Notebook
 
-## Pluto Notebook
+### Pluto Notebook
 
-## VSCode
+### VSCode
 
-## 其它在线服务
+### 其它在线服务
+
+## REPL的基本操作 {#sec:repl_operations}
+
+## 开发包 {#sec:develop_package}
