@@ -37,3 +37,5 @@ _gen/current_julia_version_zh.md
 ## REPL的基本操作 {#sec:repl_operations}
 
 ## 开发包 {#sec:develop_package}
+
+## 常见问题 {#sec:common_questions}

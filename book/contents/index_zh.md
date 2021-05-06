@@ -53,6 +53,7 @@
 |         |@sec:setup_julia_environment      | 配置Julia开发环境 |   撰写中      |             |
 |         |@sec:repl_operations      |REPL的基本操作|   撰写中      |             |
 |         |@sec:develop_package      |开发包 |   撰写中      |             |
+|         |@sec:common_questions      |常见问题 |   撰写中      |             |
 
 ```{.include}
 _gen/last_update.md

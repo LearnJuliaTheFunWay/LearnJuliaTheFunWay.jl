@@ -10,10 +10,10 @@ uuid = "56f22d72-fd6d-98f1-02f0-08ddc0907c33"
 uuid = "2a0f44e3-6c83-55bd-87e4-b1978d98bd5f"
 
 [[Books]]
-deps = ["CodeTracking", "Compose", "DataFrames", "Latexify", "LiveServer", "Markdown", "Memoize", "Requires", "TOML", "Tectonic", "YAML", "pandoc_crossref_jll", "pandoc_jll"]
-git-tree-sha1 = "1807424086850adc64e4e04d29c99d36e4e651b2"
+deps = ["CodeTracking", "Compose", "DataFrames", "Latexify", "LiveServer", "Markdown", "Memoize", "Requires", "TOML", "Tectonic", "URIs", "YAML", "pandoc_crossref_jll", "pandoc_jll"]
+git-tree-sha1 = "71ab86630f747e337f09a6c3e017b64dc9263eb6"
 uuid = "939d5c6b-51ae-42e7-97ca-7564d0d4ad91"
-version = "0.4.3"
+version = "0.4.4"
 
 [[CodeTracking]]
 deps = ["InteractiveUtils", "UUIDs"]
@@ -35,9 +35,9 @@ version = "0.12.8"
 
 [[Compat]]
 deps = ["Base64", "Dates", "DelimitedFiles", "Distributed", "InteractiveUtils", "LibGit2", "Libdl", "LinearAlgebra", "Markdown", "Mmap", "Pkg", "Printf", "REPL", "Random", "SHA", "Serialization", "SharedArrays", "Sockets", "SparseArrays", "Statistics", "Test", "UUIDs", "Unicode"]
-git-tree-sha1 = "ac4132ad78082518ec2037ae5770b6e796f7f956"
+git-tree-sha1 = "0a817fbe51c976de090aa8c997b7b719b786118d"
 uuid = "34da2185-b29b-5c13-b0c7-acf172513d20"
-version = "3.27.0"
+version = "3.28.0"
 
 [[Compose]]
 deps = ["Base64", "Colors", "DataStructures", "Dates", "IterTools", "JSON", "LinearAlgebra", "Measures", "Printf", "Random", "Requires", "Statistics", "UUIDs"]
@@ -57,9 +57,9 @@ version = "1.6.0"
 
 [[DataFrames]]
 deps = ["Compat", "DataAPI", "Future", "InvertedIndices", "IteratorInterfaceExtensions", "LinearAlgebra", "Markdown", "Missings", "PooledArrays", "PrettyTables", "Printf", "REPL", "Reexport", "SortingAlgorithms", "Statistics", "TableTraits", "Tables", "Unicode"]
-git-tree-sha1 = "6e5452d9cf401ed9048e1cde93815be53d951079"
+git-tree-sha1 = "ce0245eff066b386144e39c022052c3994fb4fce"
 uuid = "a93c6f00-e57d-5684-b7b6-d8193f3e46c0"
-version = "1.0.2"
+version = "1.1.0"
 
 [[DataStructures]]
 deps = ["Compat", "InteractiveUtils", "OrderedCollections"]
